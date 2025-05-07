@@ -3,7 +3,7 @@ services:
     name: n8n
     env: docker
     repo: https://github.com/n8n-io/n8n
-    region: oregon  # Bisa diganti ke frankfurt jika kamu di Eropa/Asia
+    region: oregon  # Atau frankfurt
     plan: free
     envVars:
       - key: N8N_BASIC_AUTH_ACTIVE
@@ -21,6 +21,3 @@ services:
       - key: VUE_APP_URL_BASE_API
         value: https://n8n-<your-app-name>.onrender.com/
     dockerfilePath: ./Dockerfile
-    buildCommand: ""  # Kosongkan karena pakai Docker
-    startCommand: n8n
-    
